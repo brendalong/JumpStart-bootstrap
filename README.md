@@ -2,9 +2,9 @@
 
 ### Bootstrap Website Details
 * http://getbootstrap.com/
-* Get started with CDN links: http://getbootstrap.com/getting-started/
-* Checkout examples: http://getbootstrap.com/getting-started/#examples
-* Starter Template: http://getbootstrap.com/getting-started/#template
+* Get started with CDN links: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+* Checkout examples: https://getbootstrap.com/docs/4.0/examples/
+* Starter Template: https://getbootstrap.com/docs/4.0/examples/starter-template/
 
 Bootstrap requires a containing element to wrap site contents and house the grid system.
 
@@ -31,7 +31,7 @@ Disables zooming on mobile devices
 
 
 ### The Grid
-* http://getbootstrap.com/css/
+* https://getbootstrap.com/docs/4.0/layout/grid/
 * Media Queries - based on different size viewports.
 * Rows are made up of 12 columns. 
 * Divide 12 by the number of visible columns (any combination adding up to 12).
@@ -42,28 +42,36 @@ Disables zooming on mobile devices
     <div class="col-lg-4">Column 3</div>
 </div>
 ```
+* OR use a unit-less value and let Bootstrap figure out the rest
+```
+<div class="row">
+    <div class="col">Column 1</div>
+    <div class="col">Column 2</div>
+    <div class="col-4">Column 3</div>
+</div>
+```
 
-* Columns have additional class related to re-size: lg, md, sm, xs.
-    - **lg** Resizes as soon as the browser window reduces below 1200px
-    - **md** Resizes as soon as the browser window reduces below 992px
-    - **sm** Resizes as soon as the browser window reduces below 768px
-    - **xs** No resize
+* Columns have additional classes related to size: xl, lg, md, sm.
+    - **xl** Resizes as soon as the browser window reduces below 1200px
+    - **lg** Resizes as soon as the browser window reduces below 992px
+    - **md** Resizes as soon as the browser window reduces below 768px
+    - **sm** Resizes as soon as the browser window reduces below 575px
+    - **col/xs** No resize
 
 
 ### Images
-* `.img-responsive` class applies:
-    - max-width: 100%;
-    - height: auto; 
-    - display: block; 
+* `.img-fluid` class applies:
+    - max-width: 100%; 
+    - height: auto;
     - to the image so that it scales nicely to the parent element
-* Center images that use the `.img-responsive class`, with `.center-block`
-* Add shapes
-    - `<img src="..." alt="..." class="img-rounded">`
-    - `<img src="..." alt="..." class="img-circle">`
-    - `<img src="..." alt="..." class="img-thumbnail">`
+* Align images with float classes or text alignment classes
+    - `.float-left` or `.float-right` or `mx-auto`
+    - `.text-center`
+    - https://getbootstrap.com/docs/4.0/content/images/
 
 ### Grid Detail Example
 * https://github.com/brendalong/responsive-starter
 
-### Read Bootstrap docs for more options
+### Read Bootstrap docs for more options including Typography
+* https://getbootstrap.com/docs/4.0/content/typography/
 

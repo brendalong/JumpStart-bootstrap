@@ -23,3 +23,7 @@ h1 {
 	justify-content: center;
 	background-color: thistle;
 }
+
+.highlight {
+	background-color: lemonchiffon;
+}
