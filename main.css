@@ -5,6 +5,10 @@
 .container-fluid {
 	background-color: lightskyblue;
 }
+.container-flex {
+	display: flex;
+	margin:2em;
+}
 
 h1 {
 	color:white;
